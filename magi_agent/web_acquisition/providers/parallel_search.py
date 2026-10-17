@@ -24,6 +24,7 @@ _USER_AGENT = f"magi-agent/{__version__}"
 class ParallelSearchProvider:
     """Search without a Parallel key; fetch remains with existing providers."""
 
+    # Required trust marker for the existing live-provider boundary.
     openmagi_live_provider: Literal[True] = True
 
     def __init__(
